@@ -456,7 +456,7 @@ header.sticky {
 .timeline {
   position: relative;
   max-width: 100%;
-  margin: 100px auto;
+  margin: auto;
   color: black;
   background: #eae7dc;
 }
