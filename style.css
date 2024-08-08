@@ -16,7 +16,7 @@
   --bg-color: #cac2b5;
   --main-color: #ffa343;
   --h1-font: 6rem;
-  --h2-font: 3rem;
+  --h2-font: 2.5rem;
   --p-font: 1rem;
 }
 
@@ -104,12 +104,6 @@ section {
   position: relative;
   height: 100vh;
   width: 100%;
-  /* background-image: linear-gradient(
-      to left,
-      rgba(0, 0, 0, 0.6),
-      rgba(0, 0, 0, 0.3)
-    ),
-    url(/assets/wp1.jpg); */
   background-size: cover;
   background-position: bottom center;
   display: flex;
@@ -215,18 +209,12 @@ header.sticky {
   background: #eae7dc;
 }
 
-/* .holiday-img img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-} */
-
 .holiday-img h5 {
   font-size: 22px;
   font-weight: 600;
   color: var(--header-color);
-  text-transform: uppercase;
-  letter-spacing: 6px;
+  text-transform: capitalize;
+  letter-spacing: 2px;
   margin-bottom: 20px;
 }
 
@@ -236,22 +224,6 @@ header.sticky {
   line-height: 1.2;
   margin-bottom: 25px;
 }
-
-/* .holiday-text h5 {
-  font-size: 22px;
-  font-weight: 600;
-  color: var(--main-color);
-  text-transform: uppercase;
-  letter-spacing: 6px;
-  margin-bottom: 20px;
-}
-
-.holiday-text h2 {
-  font-size: var(--h2-font);
-  font-weight: 800;
-  line-height: 1.2;
-  margin-bottom: 25px;
-} */
 
 .holiday-text p {
   font-size: var(--p-font);
@@ -459,13 +431,13 @@ header.sticky {
   margin: auto;
   color: black;
   background: #eae7dc;
+  z-index: -11;
 }
 
 .container {
   padding: 10px 50px;
   position: relative;
   width: 50%;
-  /* background: rgba(0, 0, 0, 0.3); */
   animation: movedown 1s linear forwards;
   opacity: 0;
 }
@@ -538,8 +510,8 @@ header.sticky {
   position: absolute;
   width: 6px;
   height: 100%;
-  background: #fff;
-  top: 0;
+  background: #b0372e;
+  top: 12%;
   left: 50%;
   margin-left: -3px;
   z-index: -1;
@@ -551,7 +523,7 @@ header.sticky {
     height: 0;
   }
   100% {
-    height: 100%;
+    height: 78%;
   }
 }
 
@@ -595,49 +567,47 @@ header.sticky {
 
 .contact-bg {
   color: #000;
-  margin: 0.8rem 0;
 }
+
 .contact-bg h3 {
   font-size: 1.3rem;
   font-weight: 400;
-  padding-left: 15px;
   color: var(--header-color);
 }
+
 .contact-bg h2 {
   font-size: 3rem;
-  text-transform: uppercase;
-  padding: 0rem 10px;
-  letter-spacing: 4px;
+  text-transform: capitalize;
+  letter-spacing: 2px;
 }
 
 .text {
   font-weight: 300;
   opacity: 0.9;
 }
-.contact-bg .text {
-  padding-left: 15px;
-}
+
 .contact-body {
-  max-width: 1320px;
   margin: 0 auto;
-  padding: 0 1rem;
 }
+
+.contact-info {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
 /* .contact-info {
-  margin: 2rem 0;
-  padding: 2rem 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 } */
+
 .contact-info span {
-  display: block;
+  display: inline-block;
   color: #b0372e;
-}
-.contact-info div {
-  margin: 0.8rem 0;
-  padding: 1rem;
-}
-.contact-info span .fas {
-  font-size: 2rem;
-  padding-bottom: 0.9rem;
-  color: #f7327a;
 }
 
 .contact-info .text {
@@ -792,7 +762,7 @@ header.sticky {
 
   .left-container-arrow,
   .right-container-arrow {
-    border-right: 15px solid #fff;
+    border-right: 15px solid #b0372e;
     border-left: 0;
     left: -15px;
   }
