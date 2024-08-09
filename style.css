@@ -257,6 +257,8 @@ header.sticky {
 
 .box {
   position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
 }
 
 .box img {
@@ -563,10 +565,19 @@ header.sticky {
 /* contact me section */
 .contact-section {
   background: #eae7dc;
+  padding: 2rem 0; /* Added padding for spacing around the section */
+}
+
+.contact-body {
+  width: 80%; /* Adjusted width for better alignment */
+  margin: 0 auto; /* Center the content */
+  max-width: 1200px; /* Set a maximum width */
 }
 
 .contact-bg {
   color: #000;
+  text-align: center; /* Center-align the intro text */
+  margin-bottom: 2rem; /* Added margin below the heading section */
 }
 
 .contact-bg h3 {
@@ -581,13 +592,9 @@ header.sticky {
   letter-spacing: 2px;
 }
 
-.text {
+.contact-bg .text {
   font-weight: 300;
   opacity: 0.9;
-}
-
-.contact-body {
-  margin: 0 auto;
 }
 
 .contact-info {
@@ -595,22 +602,34 @@ header.sticky {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
-  gap: 1rem;
+  gap: 2rem; /* Increased gap for better spacing between items */
 }
 
-/* .contact-info {
+.contact-info div {
+  background: #fff; /* Added background for each contact item */
+  padding: 1rem; /* Added padding for each item */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Added a subtle shadow */
+  flex: 1 1 calc(50% - 2rem); /* Flex-grow for responsiveness */
   display: flex;
-  flex-direction: row;
-  align-items: center;
-} */
+  flex-direction: column;
+  align-items: flex-start; /* Align items to the start of each div */
+}
 
 .contact-info span {
   display: inline-block;
   color: #b0372e;
+  font-weight: bold;
+  margin-bottom: 0.5rem; /* Spacing between icon and label */
+}
+
+.contact-info p {
+  margin: 0.5rem 0; /* Spacing above and below the paragraph */
+  color: #555; /* Slightly lighter text color for description */
 }
 
 .contact-info .text {
+  font-weight: bold;
   padding-top: 0.4rem;
 }
 
