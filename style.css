@@ -125,6 +125,7 @@ section {
   font-weight: 800;
   line-height: 1.2;
   margin-bottom: 20px;
+  text-shadow: -4px 7px #555;
 }
 
 .home-text p {
@@ -418,14 +419,6 @@ header.sticky {
   transform: translateX(-4px);
 }
 
-.copyright p {
-  text-align: center;
-  padding: 5px;
-  color: #000;
-  font-size: 9px;
-  background: var(--header-color);
-}
-
 /* timeline section css */
 .timeline {
   position: relative;
@@ -565,19 +558,19 @@ header.sticky {
 /* contact me section */
 .contact-section {
   background: #eae7dc;
-  padding: 2rem 0; /* Added padding for spacing around the section */
+  padding: 2rem 0;
 }
 
 .contact-body {
-  width: 80%; /* Adjusted width for better alignment */
-  margin: 0 auto; /* Center the content */
-  max-width: 1200px; /* Set a maximum width */
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1200px;
 }
 
 .contact-bg {
   color: #000;
-  text-align: center; /* Center-align the intro text */
-  margin-bottom: 2rem; /* Added margin below the heading section */
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
 .contact-bg h3 {
@@ -602,35 +595,48 @@ header.sticky {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 2rem; /* Increased gap for better spacing between items */
+  gap: 2rem;
 }
 
 .contact-info div {
-  background: #fff; /* Added background for each contact item */
-  padding: 1rem; /* Added padding for each item */
-  border-radius: 8px; /* Rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Added a subtle shadow */
-  flex: 1 1 calc(50% - 2rem); /* Flex-grow for responsiveness */
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  flex: 1 1 calc(50% - 2rem);
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* Align items to the start of each div */
+  align-items: flex-start;
 }
 
 .contact-info span {
   display: inline-block;
   color: #b0372e;
   font-weight: bold;
-  margin-bottom: 0.5rem; /* Spacing between icon and label */
+  margin-bottom: 0.5rem;
+}
+
+.contact-info span i {
+  font-size: 1.5rem;
 }
 
 .contact-info p {
-  margin: 0.5rem 0; /* Spacing above and below the paragraph */
-  color: #555; /* Slightly lighter text color for description */
+  margin: 0.5rem 0;
+  color: #555;
 }
 
 .contact-info .text {
   font-weight: bold;
   padding-top: 0.4rem;
+}
+
+/* footer */
+.copyright p {
+  text-align: center;
+  padding: 5px;
+  color: #eae7dc;
+  font-size: 9px;
+  background: var(--header-color);
 }
 
 /* media query */
