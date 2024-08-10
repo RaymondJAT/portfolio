@@ -52,7 +52,7 @@ span {
 }
 
 .navbar a {
-  color: var(--bg-color);
+  color: var(--header-color);
   font-size: 15px;
   font-weight: 500;
   margin: 15px 22px;
@@ -70,7 +70,7 @@ span {
 }
 
 .header-right a:first-child {
-  color: var(--bg-color);
+  color: var(--header-color);
   font-size: 15px;
   margin-right: 20px;
 }
@@ -78,7 +78,7 @@ span {
 .header-right a {
   vertical-align: middle;
   font-size: 20px;
-  color: var(--bg-color);
+  color: var(--header-color);
   margin-right: 0;
   margin-left: 10px;
   transition: all 0.5s ease;
@@ -163,6 +163,14 @@ header.sticky {
   padding: 20px 17%;
   background: var(--header-color);
   backdrop-filter: blur(35px);
+}
+
+header.sticky a {
+  color: var(--bg-color);
+}
+
+header.sticky .header-right a:first-child {
+  color: var(--bg-color);
 }
 
 .feature-content {
