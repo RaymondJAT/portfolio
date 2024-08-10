@@ -61,6 +61,7 @@ span {
 
 .navbar a:hover {
   color: var(--text-color);
+  transform: translateY(-3px);
 }
 
 .header-right {
@@ -111,22 +112,22 @@ section {
   justify-content: flex-start;
 }
 
-.home-text h5 {
+/* .home-text h5 {
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 10px;
   text-transform: uppercase;
   letter-spacing: 6px;
   color: var(--header-color);
-}
+} */
 
 .home-text h1 {
   font-size: var(--h1-font);
+  letter-spacing: 4px;
   font-weight: 800;
-
   line-height: 1.2;
   margin-bottom: 20px;
-  text-shadow: -4px 7px #555;
+  text-shadow: -9px 5px 5px #555;
 }
 
 .home-text p {
@@ -214,7 +215,6 @@ header.sticky {
 
 .holiday-img h5 {
   font-size: 22px;
-  font-weight: 600;
   color: var(--header-color);
   text-transform: capitalize;
   margin-bottom: 20px;
@@ -243,6 +243,7 @@ header.sticky {
 .center-text h2 {
   font-size: var(--h2-font);
   font-weight: 800;
+  /* padding-bottom: 50px; */
 }
 
 .tour-content {
@@ -255,6 +256,7 @@ header.sticky {
 
 .center-text h4 {
   color: var(--header-color);
+  font-size: 22px;
 }
 
 .box {
@@ -430,6 +432,16 @@ header.sticky {
   z-index: -11;
 }
 
+.timeline-text {
+  text-align: center;
+  /* margin-bottom: 100px; */
+}
+
+.timeline-text h2 {
+  font-size: var(--h2-font);
+  font-weight: 800;
+}
+
 .container {
   padding: 10px 50px;
   position: relative;
@@ -594,31 +606,41 @@ header.sticky {
 .contact-info {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   justify-content: space-between;
-  gap: 3rem;
+  gap: 2rem;
+  flex-wrap: nowrap;
 }
+
+/* display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+  align-items: center;
+  gap: 3rem;
+  margin-top: 5rem; */
 
 .contact-info div {
   background: #fff;
-  padding: 1rem;
+  padding: 1.5rem;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-  flex: 1 1 calc(50% - 2rem);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  max-width: 300px;
+  text-align: left;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
-.contact-info span {
-  display: inline-block;
-  color: #b0372e;
-  font-weight: bold;
-  margin-bottom: 0.5rem;
-}
-
 .contact-info span i {
   font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #b0372e;
+}
+
+.contact-info span {
+  display: block;
+  font-weight: bold;
+  color: #b0372e;
+  margin-bottom: 0.5rem;
 }
 
 .contact-info p {
