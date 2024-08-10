@@ -135,8 +135,22 @@ section {
   font-weight: 500;
   line-height: 30px;
   color: var(--text-color);
-  margin-bottom: 35px;
+  margin-bottom: 20px;
   text-align: justify;
+}
+
+.skills {
+  display: flex;
+  gap: 10px; /* Space between the icons */
+  justify-content: flex-start; /* Align icons to the left */
+  margin-bottom: 35px; /* Space below the skill icons */
+}
+
+.skill-icon {
+  width: 35px; /* Size of the skill icons */
+  height: 35px; /* Ensures the icons are square */
+  object-fit: cover; /* Ensures the images fit within the box */
+  border-radius: 5px; /* Optionally round the corners */
 }
 
 .btn {
@@ -267,6 +281,94 @@ header.sticky #menu-icon {
   font-size: var(--h2-font);
   font-weight: 800;
   /* padding-bottom: 50px; */
+}
+
+/* my services */
+/* My Services section */
+.my-services {
+  padding: 20px 12%;
+}
+
+.services-text {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.services-text h4 {
+  font-size: 22px;
+  color: var(--header-color); /* Adjust color as needed */
+}
+
+.services-text h2 {
+  font-size: 2.5rem;
+  line-height: 1.3;
+  color: var(--text-color); /* Adjust color as needed */
+}
+
+.services-text p {
+  font-size: 1rem;
+  color: var(--text-color); /* Adjust color as needed */
+  margin: 1rem 0;
+}
+
+/* Services boxes */
+.services-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.service-box {
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  max-width: 300px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.service-box img {
+  width: 80px; /* Adjust width as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 1rem;
+}
+
+.service-box h6 {
+  font-size: 22px;
+  color: var(--header-color); /* Adjust color as needed */
+  margin-bottom: 0.5rem;
+}
+
+.service-box p {
+  font-size: 1rem;
+  color: var(--text-color); /* Adjust color as needed */
+}
+
+/* Center button */
+.services-btn {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.services-btn .btn {
+  padding: 12px 30px;
+  background: var(--header-color);
+  color: var(--bg-color);
+  font-size: 15px;
+  font-weight: 600;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+}
+
+.services-btn .btn:hover {
+  transform: translateX(10px);
+  border: 2px solid var(--text-color);
+  background: transparent;
+  color: var(--text-color);
 }
 
 .tour-content {
@@ -510,9 +612,11 @@ header.sticky #menu-icon {
 
 .text-box {
   padding: 20px 30px;
-  background: transparent;
+  background: url("/portfolio/assets/bg.jpg") no-repeat center center;
+  background-size: cover;
   position: relative;
   border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
   font-size: 15px;
 }
 
@@ -567,7 +671,7 @@ header.sticky #menu-icon {
   margin-bottom: 15px;
 }
 
-.left-container-arrow {
+/* .left-container-arrow {
   height: 0;
   width: 0;
   position: absolute;
@@ -589,7 +693,7 @@ header.sticky #menu-icon {
   border-bottom: 15px solid transparent;
   border-right: 15px solid var(--header-color);
   left: -15px;
-}
+} */
 
 /* contact me section */
 .contact-section {
@@ -600,7 +704,7 @@ header.sticky #menu-icon {
 .contact-body {
   width: 80%;
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 1250px;
 }
 
 .contact-bg {
@@ -630,21 +734,16 @@ header.sticky #menu-icon {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  gap: 2rem;
+  gap: 3rem;
   flex-wrap: nowrap;
 }
 
-/* display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, auto));
-  align-items: center;
-  gap: 3rem;
-  margin-top: 5rem; */
-
 .contact-info div {
-  background: #fff;
+  background: url("/portfolio/assets/bg.jpg") no-repeat center center;
+  background-size: cover;
   padding: 1.5rem;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
   flex: 1;
   max-width: 300px;
   text-align: left;
@@ -675,12 +774,11 @@ header.sticky #menu-icon {
   font-weight: bold;
   padding-top: 0.4rem;
 }
-
 /* footer */
 .copyright p {
   text-align: center;
   padding: 5px;
-  color: #eae7dc;
+  color: #cac2b5;
   font-size: 9px;
   background: var(--header-color);
 }
@@ -722,6 +820,17 @@ header.sticky #menu-icon {
 
   .home {
     height: 90vh;
+  }
+
+  .contact-info {
+    flex-wrap: wrap; /* Allow wrapping */
+    justify-content: center; /* Center items */
+  }
+
+  .contact-info div {
+    flex-basis: 45%; /* Two columns layout */
+    max-width: none; /* Remove max-width */
+    margin-bottom: 1.5rem; /* Space between rows */
   }
 }
 
@@ -784,6 +893,19 @@ header.sticky #menu-icon {
 
   .newsletter-content {
     grid-template-columns: 1fr;
+  }
+
+  .contact-info div {
+    flex-basis: 100%; /* Single column layout */
+    margin-bottom: 1rem; /* Space between rows */
+  }
+
+  .contact-bg h2 {
+    font-size: 2.5rem; /* Adjust heading size */
+  }
+
+  .contact-bg .text {
+    font-size: 1rem; /* Adjust text size */
   }
 }
 
@@ -854,6 +976,22 @@ header.sticky #menu-icon {
     border-left: 0;
     left: -15px;
   }
+
+  .contact-section {
+    padding: 30px 5%; /* Adjust padding for smaller screens */
+  }
+
+  .contact-info div {
+    padding: 15px; /* Add padding inside each contact box */
+  }
+
+  .contact-bg h2 {
+    font-size: 2rem; /* Further adjust heading size */
+  }
+
+  .contact-bg .text {
+    font-size: 0.9rem; /* Further adjust text size */
+  }
 }
 
 /* media query for screens up to 450px */
@@ -868,5 +1006,21 @@ header.sticky #menu-icon {
 
   section {
     padding: 60px 3% 50px;
+  }
+
+  .contact-section {
+    padding: 20px 3%; /* Further reduce padding */
+  }
+
+  .contact-info div {
+    padding: 10px; /* Further reduce padding inside each contact box */
+  }
+
+  .contact-bg h2 {
+    font-size: 1.8rem; /* Adjust heading size */
+  }
+
+  .contact-bg .text {
+    font-size: 0.85rem; /* Adjust text size */
   }
 }
