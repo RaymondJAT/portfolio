@@ -190,6 +190,10 @@ header.sticky {
   backdrop-filter: blur(35px);
 }
 
+header.sticky a {
+  color: var(--bg-color);
+}
+
 header.sticky a i {
   color: var(--bg-color);
 }
