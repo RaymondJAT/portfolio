@@ -940,6 +940,13 @@ header.sticky #menu-icon {
     text-align: center;
   }
 
+  /* header.sticky a,
+  header.sticky a i,
+  header.sticky .header-right a:first-child,
+  header.sticky #menu-icon {
+    color: var(--header-color);
+  } */
+
   .image {
     width: 100%;
     margin-bottom: 20px;
