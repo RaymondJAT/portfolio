@@ -893,6 +893,19 @@ header.sticky #menu-icon {
   .navbar.open {
     left: 0;
   }
+
+  header,
+  .navbar {
+    background-color: #b0372e;
+  }
+
+  header a,
+  header i,
+  header .header-right a:first-child,
+  #menu-icon,
+  .navbar a {
+    color: var(--bg-color);
+  }
 }
 
 @media (max-width: 800px) {
@@ -925,7 +938,7 @@ header.sticky #menu-icon {
 @media (max-width: 600px) {
   header,
   .navbar {
-    background-color: #b0372e; /* Change header and navbar background color */
+    background-color: #b0372e;
   }
 
   header a,
@@ -933,8 +946,9 @@ header.sticky #menu-icon {
   header .header-right a:first-child,
   #menu-icon,
   .navbar a {
-    color: var(--bg-color); /* Change text and icon color to white */
+    color: var(--bg-color);
   }
+
   :root {
     --h1-font: 3.5rem;
     --h2-font: 2.1rem;

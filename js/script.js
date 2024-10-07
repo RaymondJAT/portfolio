@@ -5,19 +5,18 @@ const navbar = document.querySelector(".navbar");
 const navLinks = document.querySelectorAll(".navbar a");
 
 // Variables for image source paths
-const defaultSrc = "/portfolio/assets/myLogo.png"; // Default logo source
-const scrollSrc = "/portfolio/assets/myLogo1.png"; // Logo source when scrolling or on small screens
+const defaultSrc = "/portfolio/assets/myLogo.png";
+const scrollSrc = "/portfolio/assets/myLogo1.png";
 
 // Function to update styles based on screen size
 const updateHeaderStyles = () => {
-  if (window.innerWidth <= 768) {
-    // For small screens, change the navbar background color and set the logo to myLogo1
+  if (window.innerWidth <= 1050) {
     header.style.backgroundColor = "#b0372e";
     navbar.style.backgroundColor = "#b0372e";
-    logo.src = scrollSrc; // Set logo to myLogo1 on small screens
+    logo.src = scrollSrc;
   } else {
     // For larger screens, revert back to default styles
-    header.style.backgroundColor = ""; // Remove inline styles for background color
+    header.style.backgroundColor = "";
     navbar.style.backgroundColor = "";
 
     // Check if the header is sticky to decide which logo to display
@@ -35,7 +34,7 @@ window.addEventListener("scroll", () => {
   header.classList.toggle("sticky", isScrolled);
 
   // Update logo based on scroll position and screen size
-  if (window.innerWidth > 768) {
+  if (window.innerWidth > 1050) {
     if (isScrolled) {
       logo.src = scrollSrc;
     } else {
