@@ -923,6 +923,18 @@ header.sticky #menu-icon {
 }
 
 @media (max-width: 600px) {
+  header,
+  .navbar {
+    background-color: #b0372e; /* Change header and navbar background color */
+  }
+
+  header a,
+  header i,
+  header .header-right a:first-child,
+  #menu-icon,
+  .navbar a {
+    color: var(--bg-color); /* Change text and icon color to white */
+  }
   :root {
     --h1-font: 3.5rem;
     --h2-font: 2.1rem;
