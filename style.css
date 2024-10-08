@@ -128,8 +128,6 @@ section {
   line-height: 1.2;
   margin-bottom: 20px;
   text-shadow: -9px 5px 5px #555;
-  animation: flipInX;
-  animation-duration: 1.5s;
 }
 
 .home-text p {
@@ -139,8 +137,6 @@ section {
   color: var(--text-color);
   margin-bottom: 20px;
   text-align: justify;
-  animation: flipInX;
-  animation-duration: 1.5s;
 }
 
 .skills {
@@ -148,8 +144,6 @@ section {
   gap: 10px;
   justify-content: flex-start;
   margin-bottom: 35px;
-  animation: flipInX;
-  animation-duration: 1.5s;
 }
 
 .skill-icon {
@@ -170,8 +164,6 @@ section {
   border-radius: 5px;
   transition: all 0.5s ease;
   cursor: pointer;
-  animation: flipInX;
-  animation-duration: 1.5s;
 }
 
 .btn:hover {
@@ -190,7 +182,6 @@ section {
 .image img {
   width: 100%;
   height: auto;
-  animation: jackInTheBox;
   animation-duration: 1.5s;
 }
 
@@ -269,8 +260,8 @@ header.sticky #menu-icon {
   color: var(--header-color);
   text-transform: capitalize;
   margin-bottom: 20px;
-  animation: fadeInLeft;
-  animation-duration: 1s;
+  /* animation: fadeInLeft;
+  animation-duration: 1s; */
 }
 
 .about-img h2 {
@@ -608,7 +599,7 @@ header.sticky #menu-icon {
   }
 }
 
-.container:nth-child(1) {
+/* .container:nth-child(1) {
   animation-delay: 0s;
 }
 
@@ -630,7 +621,7 @@ header.sticky #menu-icon {
 
 .container:nth-child(6) {
   animation-delay: 5s;
-}
+} */
 
 .text-box {
   padding: 20px 30px;
@@ -672,7 +663,7 @@ header.sticky #menu-icon {
   left: 50%;
   margin-left: -3px;
   z-index: -1;
-  animation: moveline 6s linear forwards;
+  animation: moveline linear forwards;
 }
 
 @keyframes moveline {

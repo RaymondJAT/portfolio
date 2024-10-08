@@ -23,6 +23,9 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+
+    <link rel="stylesheet" href="css/animate.css" />
+
     <title>RJT</title>
     <link rel="icon" href="/portfolio/assets/box.png" type="image/x-icon" />
   </head>
@@ -59,17 +62,25 @@
     <!-- hero section -->
     <section class="home" id="home">
       <div class="image">
-        <img src="/portfolio/assets/myPhoto.png" alt="my image" />
+        <img
+          src="/portfolio/assets/myPhoto.png"
+          alt="my image"
+          class="animate__animated animate__jackInTheBox"
+        />
       </div>
       <div class="home-text">
-        <h1>
+        <h1 class="wow flipInX" data-wow-duration="1.5s">
           Work about<br />
           Contact
         </h1>
-        <p>Crafting Digital Experiences, One Line at a Time</p>
+        <p class="wow flipInX" data-wow-duration="1.5s">
+          Crafting Digital Experiences, One Line at a Time
+        </p>
 
-        <p><strong>My Skills:</strong></p>
-        <div class="skills">
+        <p class="wow flipInX" data-wow-duration="1.5s">
+          <strong>My Skills:</strong>
+        </p>
+        <div class="skills wow flipInX" data-wow-duration="1.5s">
           <img
             src="/portfolio/assets/html.png"
             alt="Skill 1"
@@ -112,19 +123,21 @@
           />
         </div>
 
-        <a href="#" class="btn">Résumé</a>
+        <a href="#" class="btn wow flipInX" data-wow-duration="1.5s">Résumé</a>
       </div>
     </section>
 
     <!-- About me section -->
     <section class="about" id="about">
       <div class="about-img">
-        <h5>About me</h5>
-        <h2>Raymond Justine Talag</h2>
+        <h5 class="wow bounceInLeft" data-wow-duration="1s">About me</h5>
+        <h2 class="wow bounceInLeft" data-wow-duration="1s">
+          Raymond Justine Talag
+        </h2>
       </div>
 
       <div class="about-text">
-        <p>
+        <p class="wow bounceInRight" data-wow-duration="1s">
           I’m a Frontend developer based in San Pedro City, Laguna, Philippines,
           with a passion for crafting everything from small business websites to
           dynamic, interactive web applications. Whether you’re a business in
@@ -138,11 +151,11 @@
     <!-- My Services section -->
     <section class="my-services" id="services">
       <div class="services-text">
-        <h4>My Services</h4>
-        <h2>
+        <h4 class="wow flipInX">My Services</h4>
+        <h2 class="wow flipInX" data-wow-duration="1.5s">
           Building Innovative Websites<br />with Frontend and Backend<br />Expertise
         </h2>
-        <p>
+        <p class="wow flipInX" data-wow-duration="2s">
           As a web developer with a specialization in frontend and basic
           knowledge in backend <br />development, I bring a unique blend of
           skills to create dynamic and user-friendly websites. With <br />
@@ -152,26 +165,26 @@
       </div>
 
       <div class="services-content">
-        <div class="service-box">
+        <div class="service-box wow flipInX" data-wow-duration="3s">
           <img src="/portfolio/assets/box.png" alt="random image" />
           <h6>Frontend Development</h6>
           <p>Crafting visually stunning and responsive user interfaces.</p>
         </div>
 
-        <div class="service-box">
+        <div class="service-box wow flipInX" data-wow-duration="4s">
           <img src="/portfolio/assets/box.png" alt="random image" />
           <h6>Backend Development</h6>
           <p>Building robust and scalable web applications.</p>
         </div>
 
-        <div class="service-box">
+        <div class="service-box wow flipInX" data-wow-duration="5s">
           <img src="/portfolio/assets/box.png" alt="random image" />
           <h6>Full Stack Development</h6>
           <p>Creating seamless end-to-end solutions for your business needs.</p>
         </div>
       </div>
 
-      <div class="services-btn">
+      <div class="services-btn wow flipInX" data-wow-duration="3s">
         <a href="#contact" class="btn">Contact Me</a>
       </div>
     </section>
@@ -179,12 +192,14 @@
     <!-- timeline section -->
     <section class="timeline" id="timeline">
       <div class="timeline-text">
-        <h2>Experience the Journey of Success</h2>
+        <h2 class="wow bounceIn" data-wow-duration="2s">
+          Experience the Journey of Success
+        </h2>
       </div>
 
       <div class="container left-container">
-        <img src="/portfolio/assets/box.png" alt="" />
-        <div class="text-box">
+        <img src="/portfolio/assets/trophy.png" alt="" class="wow fadeIn" />
+        <div class="text-box wow bounceInLeft">
           <h2>Education and Training</h2>
           <small>2024</small>
           <p>
@@ -196,8 +211,8 @@
       </div>
 
       <div class="container right-container">
-        <img src="/portfolio/assets/box.png" alt="" />
-        <div class="text-box">
+        <img src="/portfolio/assets/trophy.png" alt="" class="wow fadeIn" />
+        <div class="text-box wow bounceInRight" data-wow-duration="2s">
           <h2>Work Experience</h2>
           <small>2024</small>
           <p>
@@ -210,8 +225,8 @@
       </div>
 
       <div class="container left-container">
-        <img src="/portfolio/assets/box.png" alt="" />
-        <div class="text-box">
+        <img src="/portfolio/assets/trophy.png" alt="" class="wow fadeIn" />
+        <div class="text-box wow bounceInLeft" data-wow-duration="2s">
           <h2>Achievements</h2>
           <small>2020-2024</small>
           <p>
@@ -223,8 +238,8 @@
       </div>
 
       <div class="container right-container">
-        <img src="/portfolio/assets/box.png" alt="" />
-        <div class="text-box">
+        <img src="/portfolio/assets/trophy.png" alt="" class="wow fadeIn" />
+        <div class="text-box wow bounceInRight" data-wow-duration="2s">
           <h2>Skills</h2>
           <small></small>
           <p>
@@ -244,12 +259,14 @@
     <!-- My Projects Section -->
     <section class="service" id="projects">
       <div class="center-text">
-        <h2>Latest Projects</h2>
-        <p>Browse through my latest projects and designs.</p>
+        <h2 class="wow bounceInLeft">Latest Projects</h2>
+        <p class="wow bounceInRight" data-wow-duration="1.5s">
+          Browse through my latest projects and designs.
+        </p>
       </div>
 
       <div class="service-content">
-        <div class="box">
+        <div class="box wow bounceInUp" data-wow-duration="1s">
           <a href="https://raymondjat.github.io/thesis-ckd-system.github.io/"
             ><img src="/portfolio/assets/mycomp.jpg" alt="random image"
           /></a>
@@ -257,7 +274,7 @@
           <h4>THESIS</h4>
         </div>
 
-        <div class="box">
+        <div class="box wow bounceInUp" data-wow-duration="2s">
           <a href="#"
             ><img src="/portfolio/assets/mycomp.jpg" alt="random image"
           /></a>
@@ -265,7 +282,7 @@
           <h4>INTERN</h4>
         </div>
 
-        <div class="box">
+        <div class="box wow bounceInUp" data-wow-duration="3s">
           <a href="https://zhyrillewellnessspa.com"
             ><img src="/portfolio/assets/mycomp.jpg" alt="random image"
           /></a>
@@ -279,14 +296,14 @@
     <section class="contact-section" id="contact">
       <div class="contact-body">
         <div class="contact-bg">
-          <h3>Connect</h3>
-          <h2>contact Me</h2>
-          <p class="text">
+          <h3 class="wow bounceInRight">Connect</h3>
+          <h2 class="wow bounceInLeft">contact Me</h2>
+          <p class="text wow fadeIn" data-wow-duration="3s">
             Feel free to reach out to me for any inquiries or collaborations.
           </p>
         </div>
 
-        <div class="contact-info">
+        <div class="contact-info wow fadeIn" data-wow-delay="1s">
           <div>
             <span><i class="ri-mail-line"></i></span>
             <span>Email</span>
@@ -325,5 +342,10 @@
     </div>
 
     <script src="/portfolio/js/script.js"></script>
+    <!-- wow.js -->
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
   </body>
 </html>
